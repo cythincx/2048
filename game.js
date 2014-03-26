@@ -14,6 +14,7 @@ function Game(){
 		addNew();
 		renderTable();
 		$("body").bind("keydown",function(event){moveAndJoin(event);});
+		showTile(1,1);
 	};
 
 	var randomNum = function(){
@@ -61,6 +62,10 @@ function Game(){
 		}
 	};
 
+	var showTile = function(x,y){
+		$("#tileContainer").append("<div style='position:absolute;border-radius: 3px;background-color:pink;width:100px;height:100px;line-height:100px;top:"+(15+115*x)+"px;left:"+(15+115*y)+"px;'>2</div>");
+	};
+
 	var moveAndJoin = function(event){
 		var dir = event.keyCode;
 		//alert(dir);
@@ -98,7 +103,7 @@ function Game(){
 			//alert('bottom');
 			break;
 		}
-		$("#info").html($("#info").html()+tileNum+'  ');
+		//$("#info").html($("#info").html()+tileNum+'  ');
 		winOrOver();
 
 	};
@@ -245,7 +250,7 @@ function Game(){
 
 
 	var winOrOver = function(){
-		if(biggestTile===2048){
+		if(biggestTile===8){
 			$("body").unbind("keydown");
 			$("#result").fadeIn(300);
 			$("#resultText").fadeIn(300);
@@ -295,5 +300,6 @@ function Game(){
 var game = new Game(); 
 game.startGame();
 
+//$("#row0col0").animate({left:'100px'},300);
 
 			
