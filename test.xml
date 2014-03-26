@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DaoConfig>
+  <WebMasterDBReadConnectionString>server=192.168.62.13;uid=web_read_all;pwd=readdata;Initial Catalog=bdg_web;Connect Timeout=20;Connection Reset=FALSE</WebMasterDBReadConnectionString>
+  <WebMasterDBWriteConnectionString>Data Source=192.168.62.13;Initial Catalog=bdg;Persist Security Info=True;User ID=bdg1213;Password=LOM896yui</WebMasterDBWriteConnectionString>
+  <WebSlaveDBReadConnectionString>server=192.168.62.13;uid=web_read_all;pwd=readdata;Initial Catalog=bdg_web;Connect Timeout=20;Connection Reset=FALSE</WebSlaveDBReadConnectionString>
+  <MisMasterDBReadConnectionString>server=192.168.62.13;uid=myelong;pwd=jiujiuya09876;database=bdg;Connect Timeout=20;Connection Reset=FALSE;</MisMasterDBReadConnectionString>
+  <MisMasterDBWriteConnectionString>server=192.168.62.13;uid=myelong;pwd=jiujiuya09876;database=bdg;Connect Timeout=20;Connection Reset=FALSE;</MisMasterDBWriteConnectionString>
+  <MisSlaveDBReadConnectionString>server=192.168.62.13;uid=myelong;pwd=jiujiuya09876;database=bdg;Connect Timeout=20;Connection Reset=FALSE;</MisSlaveDBReadConnectionString>
+  <SquareConnectionString>uid=bdg1213;pwd=LOM896yui;initial catalog=bdg;data source=192.168.62.13;Connect Timeout=20;Connection Reset=FALSE;</SquareConnectionString>
+  <ApConnectionString>Data Source=192.168.62.13;Initial Catalog=bdg;persist security info=False;user id=ap_write_web;pwd=keaiya34567; packet size=4096;Connect Timeout=20;Connection Reset=FALSE;</ApConnectionString>
+  <HotelMisMasterDBReadConnectionString>uid=web_read_hotel;pwd=webreadhotel456;initial Catalog=bdg_web;data source=192.168.62.13;Connect Timeout=60;Connection Reset=FALSE</HotelMisMasterDBReadConnectionString>
+  <HotelMisMasterDBWriteConnectionString>uid=web_write_hotel;pwd=webwritehotel9320;initial catalog=bdg;data source=192.168.62.13;Connect Timeout=60;Connection Reset=FALSE</HotelMisMasterDBWriteConnectionString>
+  <CHReadConnectionString><![CDATA[metadata=res://*/Entity.CH.csdl|res://*/Entity.CH.ssdl|res://*/Entity.CH.msl;provider=System.Data.SqlClient;provider connection string="Data Source=192.168.9.151;Initial Catalog=CH;Persist Security Info=True;User ID=sa;Password=nopass.2;MultipleActiveResultSets=True"]]></CHReadConnectionString>
+  <CHWriteConnectionString><![CDATA[metadata=res://*/Entity.CH.csdl|res://*/Entity.CH.ssdl|res://*/Entity.CH.msl;provider=System.Data.SqlClient;provider connection string="Data Source=192.168.9.151;Initial Catalog=CH;Persist Security Info=True;User ID=sa;Password=nopass.2;MultipleActiveResultSets=True"]]></CHWriteConnectionString>
+  <CommentConnectionString><![CDATA[server=192.168.62.13;uid=bdg_comment_owner;pwd=bdg_comment_owner;Initial Catalog=bdg_comment;Connect Timeout=20;Connection Reset=FALSE]]></CommentConnectionString>
+  <CommentReadConnectionString><![CDATA[server=192.168.62.13;uid=bdg_comment_reader;pwd=bdg_comment_reader;Initial Catalog=bdg_comment;Connect Timeout=20;Connection Reset=FALSE]]></CommentReadConnectionString>
+  <CommentEntityConnectionString>metadata=res://*/EntityModel.CommentModel.csdl|res://*/EntityModel.CommentModel.ssdl|res://*/EntityModel.CommentModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=192.168.62.13;Initial Catalog=bdg_comment;Persist Security Info=True;User ID=bdg_comment_owner;Password=bdg_comment_owner;MultipleActiveResultSets=True&quot;</CommentEntityConnectionString>
+  <!--WebMS管理系统数据库连接串-->
+  <WebMSConnectionString><![CDATA[server=192.168.62.13;uid=WebMS_Owner;pwd=WebMS_Owner;Initial Catalog=WebMS;Connect Timeout=20;Connection Reset=FALSE]]></WebMSConnectionString>
+
+  <!--Web性能日志监控管理数据库连接串-->
+  <LogWebConnectionString><![CDATA[server=192.168.62.13;uid=Log_Web_Owner;pwd=Log_Web_Owner;Initial Catalog=Log_Web;Connect Timeout=20;Connection Reset=FALSE]]></LogWebConnectionString>
+  <LogErrorConnectionString><![CDATA[server=192.168.62.13;uid=log_error_owner;pwd=log_error_owner;Initial Catalog=Log_error;Connect Timeout=20;Connection Reset=FALSE]]></LogErrorConnectionString>
+  <LogPerformanceConnectionString><![CDATA[server=192.168.62.13;uid=log_perf_owner;pwd=log_perf_owner;Initial Catalog=log_performance;Connect Timeout=20;Connection Reset=FALSE]]></LogPerformanceConnectionString>
+
+  <IISLogConnectionString><![CDATA[server=192.168.62.13;uid=log_iis_owner;pwd=log_iis;Initial Catalog=Log_IIS;Connect Timeout=20;Connection Reset=FALSE]]></IISLogConnectionString>
+
+  <!--酒店Trigger数据库连接串-->
+  <TriggerConnectionString><![CDATA[server=192.168.9.123,1639;uid=PRS_Writer;pwd=PRS_Writer;Initial Catalog=PRSRAWDATA;Connect Timeout=20;Connection Reset=FALSE]]></TriggerConnectionString>
+
+  <!--WebApp读数据库串-->
+  <WebAppReadConnectionString>Data Source=192.168.62.13;Initial Catalog=WEB_APP;User ID=WEB_APP_Reader;Password=WEB_APP_Reader</WebAppReadConnectionString>
+  <!--WebApp写数据库串-->
+  <WebAppWriteConnectionString>Data Source=192.168.62.13;Initial Catalog=WEB_APP;User ID=WEB_APP_Writer;Password=WEB_APP_Writer</WebAppWriteConnectionString>
+  <!--Infobright数据库串-->
+  <InfobrightConnectionString>Server=192.168.62.17;UserId=user_read_all;Password=nopass.2;Database={0};Port=5029</InfobrightConnectionString>
+  <!--MySql-Web_Performancelog数据库串-->
+  <MysqlPerfLogConnectionString>Database=web_performancelog;Data Source=192.168.14.16;Port=6016;User Id=hjm;Password=123456;charset=utf8;pooling=true</MysqlPerfLogConnectionString>
+  <!--国际酒店数据库连接串-->
+  <GlobalhotelConnectionString>Data Source=192.168.66.13;Initial Catalog=ihdb;Connect Timeout=20;User ID=tester;Password=devtest</GlobalhotelConnectionString>
+  <!--国际酒店订单数据库连接串-->
+  <GlobalhotelOrderConnectionString>Data Source=192.168.66.13;Initial Catalog=InterHotel_Order;Persist Security Info=True;Connect Timeout=300;User ID=InterHotel_Order_writer;password=InterHotel</GlobalhotelOrderConnectionString>
+  <!--项目管理数据库连接串-->
+  <EapdConnectionString>server=192.168.9.123;uid=Eapd;pwd=Eapd;Initial Catalog=Eapd;Connect Timeout=20;Connection Reset=FALSE</EapdConnectionString>
+  <MisHotelLogConnectionString><![CDATA[server=192.168.62.13;uid=hotel_log;pwd=hotel_log;Initial Catalog=Hotel_Log;Connect Timeout=20;Connection Reset=FALSE]]></MisHotelLogConnectionString>
+  <!--BDG数据库连接串-->
+  <BdgReadConnectionString>Data Source=192.168.62.13;Initial Catalog=bdg;Persist Security Info=True;User ID=CM_Reader;Password=CM_Reader</BdgReadConnectionString>
+  <BdgWriteConnectionString>Data Source=192.168.62.13;Initial Catalog=bdg;Persist Security Info=True;User ID=CM_Writer;Password=CM_Writer</BdgWriteConnectionString>
+  <!--团购数据库连接串-->
+  <GrouponReadConnectionString>Data Source=192.168.76.13;Initial Catalog=GroupSalingDB;Persist Security Info=True;User ID=GroupSaling_Reader;Password=GroupSaling</GrouponReadConnectionString>
+  <GrouponWriteConnectionString>Data Source=192.168.76.13;Initial Catalog=GroupSalingDB;Persist Security Info=True;User ID=GroupSaling_Owner;Password=GroupSaling</GrouponWriteConnectionString>
+  <GrouponReadSubscriptionConnectionString>Data Source=192.168.76.14;Initial Catalog=GroupSalingDB;Persist Security Info=True;User ID=GroupSaling_Reader;Password=GroupSaling</GrouponReadSubscriptionConnectionString>
+  <PromotionReadConnectionString>server=192.168.71.13;uid=WebPromotionDB_Reader;pwd=WebPromotionDB_Reader;Initial Catalog=WebPromotionDB;Connect Timeout=20;Connection Reset=FALSE</PromotionReadConnectionString>
+  <PromotionWriteConnectionString>server=192.168.71.13;uid=WebPromotionDB_Writer;pwd=WebPromotionDB_Writer;Initial Catalog=WebPromotionDB;Connect Timeout=20;Connection Reset=FALSE</PromotionWriteConnectionString>
+  <AirLogConnectionString>data source=192.168.9.123;initial catalog=LogDb;integrated security=false;persist security info=True;User ID=tester;Password=devtest</AirLogConnectionString>
+  <GrouponReadDebugConnectionString>Data Source=192.168.76.13;Initial Catalog=GroupSalingDB;Persist Security Info=True;User ID=GroupSaling_Reader;Password=GroupSaling</GrouponReadDebugConnectionString>
+  <GrouponWebMSConnectionString>server=192.168.76.13;uid=webms_group_reader;pwd=webms_group_reader;Initial Catalog=WebMS;Connect Timeout=20;Connection Reset=FALSE</GrouponWebMSConnectionString>
+  
+  <!--真实用户性能监控-->
+  <MysqlPerfLogConnectionString>Database=web_performancelog;Data Source=192.168.14.16;Port=6016;User Id=hjm;Password=123456;charset=utf8;pooling=true;Allow User Variables=True</MysqlPerfLogConnectionString>
+  <MongodbServer>mongodb://hjm:hjm123456@192.168.14.153:27020/RealUserPerformance</MongodbServer>
+</DaoConfig>
